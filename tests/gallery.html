@@ -1,0 +1,4 @@
+<html><body style="margin:0;background:#7fbf6a"><canvas id="c"></canvas><button class="tb" id="mute"></button><script src="../src/core.js"></script><script src="../src/species.js"></script><script>
+resizeCanvas();g.setTransform(DPR*SC,0,0,DPR*SC,0,0);g.fillStyle='#8fcf7a';g.fillRect(0,0,W,H);
+let i=0;for(const k of SPK){const o=+(QS.get("o")||0);if(i<o||i>=o+9){i++;continue}const j=i-o,col=j%3,row=Math.floor(j/3);const x=70+col*130,y=80+row*150;drawBfly(g,k,x,y,58,1,0);g.fillStyle='#000';g.font='9px sans-serif';g.textAlign='center';g.fillText(SP[k].n,x,y+80);i++}
+</script></body></html>
